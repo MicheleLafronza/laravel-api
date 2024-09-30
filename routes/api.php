@@ -24,3 +24,9 @@ Route::get('/', [PageController::class, 'index']);
 Route::get('/technologies', [PageController::class, 'technologies']);
 // rotta get associata al metodo types del pagecontroller api
 Route::get('/types', [PageController::class, 'types']);
+// rotta get associata al metodo project singolo del pagecontroller api
+Route::get('/project/{slug}', [PageController::class, 'project']);
+// rotta get associata al metodo dei progetti per tipo del pagecontroller api
+Route::get('/projectsbytype', [PageController::class, 'projectsByType']);
+// rotta get associata al metodo dei progetti per tecnologia del pagecontroller api
+Route::get('/projectsbytech', [PageController::class, 'projectsByTechs']);
